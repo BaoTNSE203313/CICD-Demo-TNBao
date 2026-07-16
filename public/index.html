@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock App for Testing</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 50px; }
+        .btn { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+        #message { margin-top: 20px; font-weight: bold; color: green; }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Mock App</h1>
+    <p>This is a simple UI for Web E2E and Visual Testing.</p>
+    <button class="btn" id="clickMeBtn">Click Me</button>
+    <p id="message"></p>
+
+    <script>
+        document.getElementById('clickMeBtn').addEventListener('click', () => {
+            document.getElementById('message').innerText = 'Button was clicked!';
+        });
+    </script>
+</body>
+</html>

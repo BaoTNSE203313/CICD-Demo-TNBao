@@ -1,0 +1,35 @@
+{
+  "name": "testing-master-project",
+  "version": "1.0.0",
+  "description": "Comprehensive testing project demonstrating various methodologies",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test:unit": "jest tests/unit",
+    "test:api": "newman run tests/api/collection.json",
+    "test:e2e": "playwright test tests/e2e --browser=firefox",
+    "test:mobile": "wdio run tests/mobile/wdio.conf.cjs",
+    "test:performance": "D:\\K6\\k6.exe run tests/performance/load.js",
+    "test:visual": "percy exec -- playwright test tests/visual --browser=firefox",
+    "test:ai": "echo \"Simulating Playwright MCP AI execution based on tests/ai/mcp-config.json\"",
+    "test:all": "npm run test:unit && npm run test:api && npm run test:e2e"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@percy/cli": "^1.27.0",
+    "@percy/playwright": "^1.0.4",
+    "@playwright/test": "^1.40.0",
+    "@wdio/appium-service": "^9.29.1",
+    "@wdio/cli": "^9.29.1",
+    "@wdio/local-runner": "^9.29.1",
+    "@wdio/mocha-framework": "^9.29.1",
+    "@wdio/spec-reporter": "^9.29.1",
+    "appium": "^3.5.2",
+    "appium-uiautomator2-driver": "^8.1.0",
+    "jest": "^29.5.0",
+    "newman": "^6.0.0",
+    "tsx": "^4.23.1"
+  }
+}
