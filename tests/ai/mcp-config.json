@@ -1,9 +1,0 @@
-{
-  "mcpServer": "playwright-mcp",
-  "aiTesting": {
-    "enabled": true,
-    "strategy": "self-healing",
-    "prompt": "Vui lòng tự động sinh ra các test case Playwright bao phủ toàn bộ chức năng của http://localhost:3000"
-  },
-  "note": "Đây là file giả lập cấu hình AI-assisted testing sử dụng Playwright MCP hoặc GitHub Copilot agent."
-}
