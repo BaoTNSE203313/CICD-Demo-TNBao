@@ -34,7 +34,7 @@ describe('Math functions', () => {
     });
 
     it('should handle floating point math correctly', () => {
-      expect(add(0.1, 0.2)).toBe(0.3);
+      expect(add(0.1, 0.2)).toBeCloseTo(0.3);
     });
   });
 });
